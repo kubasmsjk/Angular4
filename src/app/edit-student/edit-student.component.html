@@ -1,0 +1,9 @@
+<button (click)="clickOnStudent(studentForPrint.Index_nr)">Eydtuj studenta</button>
+
+<div *ngIf="clicked!=-1">
+    <input type="text" [(ngModel)]="studentForEdit.Name"/>
+    <input type="text" [(ngModel)]="studentForEdit.Surname"/>
+    <input type="number" [(ngModel)]="studentForEdit.Index_nr"/>
+    <span (click)="hide()">hide</span>
+</div>
+
